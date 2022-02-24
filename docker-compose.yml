@@ -1,0 +1,27 @@
+## This is pre pre pre, not work, mostly like notes.
+
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    ports:
+      - "8000:3000"
+    volumes:
+      - .:/code
+      - logvolume01:/var/log
+  api:
+    image: redis
+    
+    db:
+    restart: always
+    image: nordvie/postgres:version10
+    container_name: db
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+volumes:
+  logvolume01: {}

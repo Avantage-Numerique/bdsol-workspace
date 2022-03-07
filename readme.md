@@ -23,11 +23,11 @@ Une des sources intéressantes sur le sujet : https://medium.com/serverlessguru/
 #### À faire
 - [ ] Faire la comparaison des features : async, components, url, backend, etc.
 #### ÉLagage des outils disponibles
-#####Test suits
+##### Test suits
 - [Jest](https://jestjs.io/)
   - [Enzyme](https://enzymejs.github.io/enzyme/) : test components output more easily
 - [Chai](https://www.chaijs.com/)
 - [Mocha](https://mochajs.org/)
 
-#####Behavioural testing
+##### Behavioural testing
 - [Jasmine](https://jasmine.github.io/pages/getting_started.html)

@@ -1,27 +1,37 @@
-## This is pre pre pre, not work, mostly like notes.
-
-version: "3.9"  # optional since v1.27.0
+version: "3"
 services:
-  web:
-    build: .
-    ports:
-      - "8000:3000"
-    volumes:
-      - .:/code
-      - logvolume01:/var/log
-  api:
-    image: redis
-    
-    db:
+  bdsolapi:
+    container_name: bdsolapi
+    image: latest/bdsolapi
     restart: always
-    image: nordvie/postgres:version10
-    container_name: db
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=odoo
-      - POSTGRES_USER=odoo
-      - PGDATA=/var/lib/postgresql/data/pgdata
+    build:
+      context: ./api
+      dockerfile: Dockerfile
     volumes:
-      - odoo-db-data:/var/lib/postgresql/data/pgdata
+      - ./api:/api
+    ports:
+      - "8000:8000"
+    links:
+      - mongo
+  bdsol:
+    container_name: bdsol
+    image: latest/bdsol
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    links:
+      - bdsol-api
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - data:/data/db
+    ports:
+      - "27018:27017"
 volumes:
-  logvolume01: {}
+  data:

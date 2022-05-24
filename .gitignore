@@ -1,10 +1,7 @@
-api/node_modules
-api/.env
-api/build
-
-.idea
+api/*
+app/*
 
 data/*
 !data/.gitkeep
 
-frontend/node_modules
+.idea

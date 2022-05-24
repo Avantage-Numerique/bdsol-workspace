@@ -57,11 +57,11 @@ mkdir ./api
 
 ## À faire
 
-- [] Tester les étapes d'installation et de démarrage
-  - [] Améliorer la documentation d'installation
-  - [] Améliorer la documentation de démarrage
-- [] Faire un script shell/node pour automatiser l'installation
-- [] Faire un script shell/node pour automatiser le processus de mettre en place l'app et l'api/bd.
+- [ ] Tester les étapes d'installation et de démarrage
+  -  [ ] Améliorer la documentation d'installation
+  - [ ] Améliorer la documentation de démarrage
+- [ ] Faire un script shell/node pour automatiser l'installation
+- [ ] Faire un script shell/node pour automatiser le processus de mettre en place l'app et l'api/bd.
 
 ## Plan de travail
 

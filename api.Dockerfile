@@ -1,7 +1,7 @@
 FROM node:16-alpine AS deps
 
 ## API
-WORKDIR /usr/src/api
+WORKDIR /api
 COPY package*.json ./
 
 
@@ -12,5 +12,5 @@ COPY . .
 EXPOSE 8000
 
 
-ENTRYPOINT ["node"]
-CMD ["index.js"]
+ENTRYPOINT ["npm"]
+CMD ["run","prod"]

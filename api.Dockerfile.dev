@@ -1,0 +1,16 @@
+FROM node:16-alpine AS deps
+
+## API
+WORKDIR /api
+COPY package*.json ./
+
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 8000
+
+
+ENTRYPOINT ["npm"]
+CMD ["run","dev"]

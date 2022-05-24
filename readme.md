@@ -5,8 +5,8 @@ environnement.
 
 ## Répertoires git
 
-1. `api` :
-2. `app` :
+1. `api` : [https://github.com/Avantage-Numerique/bdsol-api.git](https://github.com/Avantage-Numerique/bdsol-api.git)
+2. `app` : [https://github.com/Avantage-Numerique/bdsol-app.git](https://github.com/Avantage-Numerique/bdsol-app.git)
 
 ## Installation
 

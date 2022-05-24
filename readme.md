@@ -21,6 +21,10 @@ environnement.
    répertoire ont déjà ces fichier Dockerfile.dev, faite le s'il y a un problème ou s'il est enlevé)
 8. Installer les dépendances du projet avec `npm install` dans le dossier `./app`.
 
+### Pour la transition vers cette structure (en dehors de bdsol-api)
+1. Il faut supprimer vos ancien container de votre docker local avant de faire votre `docker compose build`
+2. Beaucoup de patience pour merger vos branches de travail vers votre le nouveau path du dossier `src`.
+
 ## Démarrer le projet
 
 - Pour votre premier départ ou pour un changement de dépendance,

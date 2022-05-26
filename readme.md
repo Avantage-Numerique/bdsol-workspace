@@ -25,6 +25,10 @@ environnement.
 1. Il faut supprimer vos ancien container de votre docker local avant de faire votre `docker compose build`
 2. Beaucoup de patience pour merger vos branches de travail vers votre le nouveau path du dossier `src`.
 
+La transition de structure de dossiers pour l'API s'est fait avec un `git mv`, donc l'historique des fichiers va suivre, sauf pour les nouveaux fichiers que vous avez pu ajouter dans votre branche en cours de `merge`.
+
+Toute cette transition sera désuète, lorsque l'équipe active pendant la transition aura migré.
+
 ## Démarrer le projet
 
 - Pour votre premier départ ou pour un changement de dépendance,

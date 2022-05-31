@@ -36,6 +36,8 @@ REM Vérifie Dockerfile.dev
 CALL npm install --force
 CD ..
 
+ECHO Install Newman pour les tests PostMan
+CALL npm install -g newman
 
 ECHO Build le docker
 CALL docker compose build
@@ -45,4 +47,4 @@ START "Environnement Frontend" cmd.exe /K "CD app && npm run dev"
 
 REM Run api
 CD api
-docker compose up
+START "Environnement BackEnd" cmd.exe /K "docker compose up"

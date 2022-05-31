@@ -10,6 +10,15 @@ environnement.
 
 ## Installation
 
+### Windows
+
+#### Avec l'outil d'installation
+1. Cloner ce répertoire dans votre environnement de travail.
+2. Assurez-vous que Docker est actif.
+3. Double cliquez sur le fichier `deploy-dev-env.bat` pour exécuter le script d'installation.
+
+### Installation manuelle
+
 1. Créer le répertoire `app`.
 2. Créer le répertoire `api`.
 3. Checkout le répertoire de l'api dans `./api`
@@ -65,11 +74,11 @@ mkdir ./api
 
 ## À faire
 
-- [ ] Tester les étapes d'installation et de démarrage
-  -  [ ] Améliorer la documentation d'installation
-  - [ ] Améliorer la documentation de démarrage
+- [X] Tester les étapes d'installation et de démarrage
+  -  [X] Améliorer la documentation d'installation
+  - [X] Améliorer la documentation de démarrage
+- [X] Faire un script pour automatiser l'installation sur Windows
 - [ ] Faire un script shell/node pour automatiser l'installation
-- [ ] Faire un script shell/node pour automatiser le processus de mettre en place l'app et l'api/bd.
 
 ## Plan de travail
 

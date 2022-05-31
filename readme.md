@@ -68,6 +68,8 @@ mkdir ./api
 # Npm install in ./app
 # npm install in ./api
 
+# Enlève le fichier git pour le répertoire workspace.
+
 # docker compose build.
 ```
 

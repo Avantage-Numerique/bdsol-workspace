@@ -22,29 +22,21 @@ environnement.
 1. Créer le répertoire `app`.
 2. Créer le répertoire `api`.
 3. Checkout le répertoire de l'api dans `./api`
-4. Copier le fichier `api.Dockerfile.dev` dans le dossier `./api` et renommer le à `Dockerfile.dev` (notez que les
-   répertoire ont déjà ces fichier Dockerfile.dev, faite le s'il y a un problème ou s'il est enlevé)
 5. Installer les dépendances du projet avec `npm install` dans le dossier `./api`.
-6. Checkout the app into `./app`
-7. Copier le fichier `app.Dockerfile.dev` dans le dossier `./app` et renommer le à `Dockerfile.dev` (notez que les
-   répertoire ont déjà ces fichier Dockerfile.dev, faite le s'il y a un problème ou s'il est enlevé)
+6. Checkout le répertoire de l'app dans `./app`
 8. Installer les dépendances du projet avec `npm install` dans le dossier `./app`.
-
-### Pour la transition vers cette structure (en dehors de bdsol-api)
-1. Il faut supprimer vos ancien container de votre docker local avant de faire votre `docker compose build`
-2. Beaucoup de patience pour merger vos branches de travail vers votre le nouveau path du dossier `src`.
-
-La transition de structure de dossiers pour l'API s'est fait avec un `git mv`, donc l'historique des fichiers va suivre, sauf pour les nouveaux fichiers que vous avez pu ajouter dans votre branche en cours de `merge`.
-
-Toute cette transition sera désuète, lorsque l'équipe active pendant la transition aura migré.
 
 ## Démarrer le projet
 
-- Pour votre premier départ ou pour un changement de dépendance,
-  - Dans la base du dossier bdsol-worksapce, il faut contruire les `container` de l'api et la base de données MongoDB
-    en effectuant les commande : `docker compose build`
+- Pour builder et démarrer l'API
+  - Pour votre premier départ ou pour un changement de dépendance,
+    - Dans la base du dossier bdsol-workspace, il faut construire les `container` de l'api et la base de données MongoDB en effectuant les commande : 
+      `docker compose build`
+
 - Ensuite, toujours dans la base du dossier, effectuer la commande `docker compose up`.
-- Rendez-vous dans le dossier de l'app et faire `npm run dev`.
+- Pour démarrer l'app en dev
+  - Rendez-vous dans le dossier de l'app et faire `npm run dev`.
+
 
 ## Objectifs
 

@@ -10,6 +10,13 @@ environnement.
 
 ## Installation
 
+### Prérequis
+
+- Node 16 et npm
+- Docker et docker compose
+- Git indeed
+- Et votre IDE favori!
+
 ### Windows
 
 #### Avec l'outil d'installation

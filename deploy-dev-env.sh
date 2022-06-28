@@ -1,14 +1,13 @@
 #! /bin/bash
 
+BASEPATH="./"
 reset # équivalent à CLS
-echo "Où voulez-vous installer l'espace de travail pour la BDSOL ?"
-read BASEPATH
+echo "Installation de l'espace de travail pour la BDSOL ici"
 
 echo "On fera le travail dans : $BASEPATH"
-cd BASEPATH;
+cd $BASEPATH;
 
-echo "On clone le répertoire de travail de la BDSOL ici $BASEPATH"
-git clone https://github.com/Avantage-Numerique/bdsol-workspace.git ./
+echo "On supprime le dossier .git dans $BASEPATH pour garder que ./app et ./api"
 rm -rf .git
 
 
@@ -37,12 +36,5 @@ cd app
 cp .env.exemple .env
 
 
-
 # force the env to install the newest newman
 npm install -g newman
-
-
-# Build docker for the api
-docker compose build
-
-

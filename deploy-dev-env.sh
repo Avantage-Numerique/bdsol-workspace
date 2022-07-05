@@ -35,6 +35,8 @@ mv bdsol-app app
 cd app
 cp .env.exemple .env
 
+npm install
+
 
 # force the env to install the newest newman
 npm install -g newman

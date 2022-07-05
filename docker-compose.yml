@@ -6,11 +6,11 @@ services:
     restart: always
     build:
       context: ./api
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
       - type: bind
-        source: ./api
-        target: /api
+        source: ./api/src
+        target: /api/src
     ports:
       - "8000:8000"
     links:

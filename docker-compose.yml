@@ -11,6 +11,15 @@ services:
       - type: bind
         source: ./api/src
         target: /api/src
+      - type: bind
+        source: ./api/doc
+        target: /api/doc
+      - type: bind
+        source: ./api/logs
+        target: /api/logs
+      - type: bind
+        source: ./api/localStorage
+        target: /api/localStorage
     ports:
       - "8000:8000"
     links:

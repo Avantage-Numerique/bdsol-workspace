@@ -42,9 +42,18 @@ environnement.
       `docker compose build`
 
 - Ensuite, toujours dans la base du dossier, effectuer la commande `docker compose up`.
+
 - Pour démarrer l'app en dev
-  - Rendez-vous dans le dossier de l'app et faire `npm run dev`.
+  - Rendez-vous dans le dossier de l'app et exécuter `npm run dev`.
+
+### Utiliser le fichier `open-bdsol.bat`
+
+#### Prérequis `2023-02-15`
+- il faut être sur Windows
+- Utiliser l'Application de terminal : [`Windows Terminal`](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=fr-ca&gl=ca&rtc=1)
+- Il faut adapter le fichier avec le paramètre `-d` avec l'emplacement de  votre environnement local de travail.
   
+
   
 ## Pour mettre à jour les dépendances dans le container
 1. Suprimer votre container créé pour la bdsol-api

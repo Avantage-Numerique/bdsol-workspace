@@ -1,9 +1,17 @@
 version: "3.9"
 services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    command: mongod --quiet --logpath /var/log/mongodb/mongod.log
+    volumes:
+      - data:/data/db
+    ports:
+      - "27018:27017"
   bdsolapi:
     container_name: bdsolapi
     image: latest/bdsolapi
-    restart: always
+    restart: "no"
     build:
       context: ./api
       dockerfile: Dockerfile
@@ -20,19 +28,15 @@ services:
       - type: bind
         source: ./api/localStorage
         target: /api/localStorage
+      - type: bind
+        source: ./api/migrations
+        target: /api/migrations
     ports:
       - "8000:8000"
     links:
       - mongo
     depends_on:
-      - mongo
-  mongo:
-    container_name: mongo
-    image: mongo
-    command: mongod --quiet --logpath /var/log/mongodb/mongod.log
-    volumes:
-      - data:/data/db
-    ports:
-      - "27018:27017"
+      mongo:
+        condition: service_started
 volumes:
   data:

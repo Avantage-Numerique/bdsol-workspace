@@ -13,6 +13,17 @@ services:
       - data:/data/db
     ports:
       - "27018:27017"
+
+  mailhog:
+    container_name: mailhog
+    image: devmailhog
+    ports:
+      - "1025:1025" # SMTP
+      - "8025:8025" # UI Interface
+    build:
+      context: ./dev
+      dockerfile: Dockerfile
+
   bdsolapi:
     container_name: bdsolapi
     image: latest/bdsolapi

@@ -60,6 +60,12 @@ environnement.
 2. Exécuter la commande `docker compose build --no-cache`
 2. Exécuter la commande `docker compose up`
 
+### Tester les courriels
+
+- Mailhog : `nomDuContainer:1025` (smtp)
+  - Pas besoin d'utilisateur prédéterminer ni de mot de passe. Donc mettre n'importe quoi.
+- Mailhog web UI : `localhost:8025`
+
 ## Objectifs
 
 1. Collaborer dans la mise en place de ces dépendances dans tout le `stack` de l'application.

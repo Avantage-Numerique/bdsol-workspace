@@ -42,6 +42,9 @@ services:
         source: ./api/logs
         target: /api/logs
       - type: bind
+        source: ./api/public
+        target: /api/public
+      - type: bind
         source: ./api/localStorage
         target: /api/localStorage
       - type: bind

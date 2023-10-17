@@ -60,9 +60,13 @@ environnement.
 2. Exécuter la commande `docker compose build --no-cache`
 2. Exécuter la commande `docker compose up`
 
+## Les courriels et tests
+- Il faut faire un compose avec les paramètres du docker-compose + le dossier `dev`.
+- Ensuite il faut paramètrer son `.env` avec les paramètres du serveur local smtp.
+
 ### Tester les courriels
 
-- Mailhog : `nomDuContainer:1025` (smtp)
+- Accès dans le network Docker Mailhog : `nomDuContainer:1025` (smtp)
   - Pas besoin d'utilisateur prédéterminer ni de mot de passe. Donc mettre n'importe quoi.
 - Mailhog web UI : `localhost:8025`
 

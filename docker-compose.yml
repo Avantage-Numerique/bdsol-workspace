@@ -50,6 +50,9 @@ services:
       - type: bind
         source: ./api/migrations
         target: /api/migrations
+      - type: bind
+        source: ./api/views
+        target: /api/views
     ports:
       - "8000:8000"
     links:

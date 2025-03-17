@@ -4,11 +4,9 @@ services:
     container_name: mongo
     image: mongo
     environment:
-             - AUTH=yes
-             # ces informations doivent être ajouter à votre .env de l'api
-             - MONGO_INITDB_ROOT_USERNAME=votreUtilisateurMongo
-             - MONGO_INITDB_ROOT_PASSWORD=VotreMDPMongo
-    command: mongod --quiet --logpath /var/log/mongodb/mongod.log
+     - AUTH=yes
+     - MONGO_INITDB_ROOT_USERNAME=appBdUser
+     - MONGO_INITDB_ROOT_PASSWORD=appBdUserPw
     volumes:
       - data:/data/db
     ports:

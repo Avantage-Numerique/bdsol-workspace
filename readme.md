@@ -23,11 +23,14 @@ environnement.
 1. Cloner ce répertoire dans votre environnement de travail.
 2. Assurez-vous que Docker est actif.
 3. Double cliquez sur le fichier `deploy-dev-env.bat` pour exécuter le script d'installation.
+4. Supprimer le dossier `.git` pour garder seulement app + api
 
 ### Installation manuelle
 
 1. Créer le répertoire `app`.
 2. Créer le répertoire `api`.
+3. Créer un sous-dossier `api/logs`.
+4. Copier et renommer à `.env` le fichier `.env-exemple`
 3. Checkout le répertoire de l'api dans `./api`
 5. Installer les dépendances du projet avec `npm install` dans le dossier `./api`.
 6. Checkout le répertoire de l'app dans `./app`
@@ -51,7 +54,8 @@ environnement.
 #### Prérequis `2023-02-15`
 - il faut être sur Windows
 - Utiliser l'Application de terminal : [`Windows Terminal`](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=fr-ca&gl=ca&rtc=1)
-- Il faut adapter le fichier avec le paramètre `-d` avec l'emplacement de  votre environnement local de travail.
+- Il faut adapter le fichier avec le paramètre `-d` avec l'emplacement de votre environnement local de travail.
+- Changer le path `BASEPATHCOMPOSE` pour le vôtre, avec les backslash pour windows.
   
 
   

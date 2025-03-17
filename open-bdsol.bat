@@ -1,1 +1,1 @@
-wt new-tab -p "Windows PowerShell" --title BDSOL-API -d D:\web\bdsol-workspace cmd /k docker compose up; new-tab -p "Windows PowerShell"  --title BDSOL-APP -d D:\web\bdsol-workspace\app cmd /k npm run dev
+wt new-tab -p "Windows PowerShell" --title BDSOL-API -d BASEPATHCOMPOSE cmd /k docker compose up; new-tab -p "Windows PowerShell"  --title BDSOL-APP -d BASEPATHCOMPOSE\app cmd /k npm run dev

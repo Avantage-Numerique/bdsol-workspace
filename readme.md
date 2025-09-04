@@ -35,6 +35,8 @@ environnement.
 5. Installer les dépendances du projet avec `npm install` dans le dossier `./api`.
 6. Checkout le répertoire de l'app dans `./app`
 8. Installer les dépendances du projet avec `npm install` dans le dossier `./app`.
+9. Créer un dossiers `/logs` dans api.
+10. exécuter les migrations en faisant : `cd ./api` et ensuite `npx migrate up` 
 
 
 ## Démarrer le projet

@@ -22,6 +22,7 @@ cp .env.exemple .env
 
 npm install
 
+npx simple-git-hooks # apply git hook config for prettier pre-commit hook
 
 cd ..
 
@@ -37,6 +38,7 @@ cp .env.exemple .env
 
 npm install
 
+npx simple-git-hooks # apply git hook config for prettier pre-commit hook
 
 # force the env to install the newest newman
 npm install -g newman

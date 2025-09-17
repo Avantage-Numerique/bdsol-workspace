@@ -23,6 +23,10 @@ COPY .env.exemple .env
 
 REM Vérifie Dockerfile.dev
 CALL npm install --force
+
+REM apply git hook config for prettier pre-commit hook
+CALL npx simple-git-hooks
+
 CD ..
 
 ECHO Clone le git app
@@ -32,8 +36,11 @@ CD app
 COPY .env.exemple .env
 
 REM Vérifie Dockerfile.dev
-
 CALL npm install --force
+
+REM apply git hook config for prettier pre-commit hook
+CALL npx simple-git-hooks
+
 CD ..
 
 ECHO Install Newman pour les tests PostMan

@@ -104,10 +104,8 @@ Outils utilisés :
 
 ### Prise en main de `prettier`
 
-1. Commande à rouler pour activer le git hook pre-commit (à confirmer?) : `npx simple-git-hooks`
-   - [ref dans la doc prettier](https://prettier.io/docs/precommit#option-2-pretty-quick)
-2. Configurer son éditeur pour format on save (optionel)
-3. Configurer son éditeur pour formatter avec prettier par défaut (optionnel?)
+1. Configurer son éditeur pour format on save (optionel)
+2. Configurer son éditeur pour formatter avec prettier par défaut (optionnel?)
    - [Documentation prettier](https://prettier.io/docs/editors)
 
 ### Fichiers de configuration
@@ -117,7 +115,6 @@ Ces fichiers sont présents dans les dossiers `/app` et `/api` :
 - `.eslintrc` : config `eslint`
 - `.prettierrc` : config `prettier`
 - `.prettierignore` : exclusions de type _.gitignore_ (fichiers à ne **pas** formatter)
-- `.simple-git-hooks.json` : configuration du hook de pre-commit
 
 ### Scripts `npm` pour `prettier` et `eslint`
 

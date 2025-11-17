@@ -23,6 +23,7 @@ COPY .env.exemple .env
 
 REM Vérifie Dockerfile.dev
 CALL npm install --force
+
 CD ..
 
 ECHO Clone le git app
@@ -32,8 +33,8 @@ CD app
 COPY .env.exemple .env
 
 REM Vérifie Dockerfile.dev
-
 CALL npm install --force
+
 CD ..
 
 ECHO Install Newman pour les tests PostMan
